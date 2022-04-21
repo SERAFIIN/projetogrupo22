@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+  }
+
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +39,7 @@ header{
     font-weight: 500;
     color: #fff;
     transition: 0.5s;
-    transition-property: background;
+    transition-property: background-color;
 }
 .sair_btn:hover{
     background: #4a9fcf;
@@ -49,16 +54,23 @@ header{
     background: #193446;
     transition: 0.5s;
     transition-property: left;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
 }
 .sidebar .image{
     width: 100px;
     height: 100px;
     border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 .sidebar h2{
     color: #ccc;
     margin-top: 0;
     margin-bottom: 20px;
+    text-align: center;
 }
 .sidebar a{
     color: #fff;
@@ -69,7 +81,7 @@ header{
     padding-left: 40px;
     box-sizing: border-box;
     transition: 0.5s;
-    transition-property: background;
+    transition-property: background-color;
 }
 .sidebar a:hover{
     background: #51b3ec;
@@ -103,7 +115,6 @@ label #sidebar_btn:hover{
     width: 80px;
 }
 .content{
-    background: url(/image/img-2.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
