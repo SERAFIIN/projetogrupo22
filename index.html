@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="styles.css">
     <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
             body {
                 font-family: 'Poppins', sans-serif;
@@ -15,10 +15,55 @@
 </head>
 
 <body>
-    <h1>Desafio de Hoje</h1>
+    <input type="checkbox" id="check" />
+    <header>
+      <label for="check">
+        <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
+      </label>
+      <div class="left">
+        <h3>Hacka<span>thon</span></h3>
+      </div>
+      <div class="right">
+        <a href="#" class="sair_btn">Sair</a>
+      </div>
+    </header>
+    <div class="sidebar">
+      <center>
+        <img src="" class="image" alt="" />
+        <h2>Rafael</h2>
+      </center>
+      <a href="#"
+        ><ion-icon name="desktop-outline"></ion-icon><span>Painel</span></a
+      >
+      <a href="#"
+        ><ion-icon name="calendar-clear-outline"></ion-icon
+        ><span>Formulario</span></a
+      >
+      <a href="#"
+        ><ion-icon name="camera-outline"></ion-icon><span>Galeria</span></a
+      >
+      <a href="#"
+        ><ion-icon name="information-circle-outline"></ion-icon
+        ><span>Sobre</span></a
+      >
+      <a href="#"
+        ><ion-icon name="settings-outline"></ion-icon
+        ><span>Configuração</span></a
+      >
+    </div>
+    <div class="content"></div>
 
+    <div id="challenge">
+      <h3 class="desafio">Desafios de hoje</h3>
+    </div>
 
-
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 </body>
 </html>
